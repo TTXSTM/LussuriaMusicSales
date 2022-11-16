@@ -3,7 +3,7 @@ body{
 	padding: 0;
 	font-family: 'Inter', sans-serif;
 	background: #E1DFEE;
-	zoom:70%;
+	
 }
 .mainlist{
 	display: flex;
@@ -17,10 +17,13 @@ body{
 .main {
     display: flex;
 	margin: 0 auto;
-	height: 530px;
+	height: 371px;
 	box-shadow: 0.1px 1px 5px black;
 	background: url("img/Сгруппировать 6.png");
-	margin-bottom: 80px;
+}
+.cover{
+	margin-top: 140px;
+	margin-right: 80px;
 }
 .logo{
 	margin-right: 53px;
@@ -29,6 +32,11 @@ body{
 .main_hat{
 	margin: 0 auto;
 	background:transparent;
+}
+.head_scroll{
+	position: fixed;
+	margin: 0 auto;
+	background: white;
 }
 .nativ{
 	display: inline-flex;
@@ -40,22 +48,19 @@ body{
 	text-decoration:none !important;
 	border: none !important;
 	text-shadow: black 0.1px 0.1px 3.5px;;
-	font-size: 19px
-}
-.mainpages{
-	
-	margin-left: 50px;
+	font-size: 13px
 }
 .pages{
 	clip-path: circle(50%);
 	border: none;
-	height: 60px;
-	width: 58px;
+	height: 42px;
+	width: 40px;
 }
 .search{
 	display: inline-flex;
     background: transparent;
-	margin-left: 230px;
+	margin-left: 944px;
+	margin-right: 50px;
 }
 .search:after{content:""; clear: both; display: table;}
 
@@ -64,8 +69,8 @@ body{
     float: right;
 }
 .search input{
-    width: 200px;
-    height: 45px;
+    width: 140px;
+    height: 31px;
     padding-left: 35px;
     border-radius: 26px;
     font-size: 15px;
@@ -78,65 +83,62 @@ body{
     color: #b2b2b283;
 }
 .search button{
-    width: 23px;
-    height: 22px;
+    width: 16px;
+    height: 15px;
     background: none;
     border: none;
     position: absolute;
-	margin-top: 8px;
-	margin-left: 8px;
+	margin-left: 10px;
 }
 .search button::before{
     content:"";
+	font-size: 10px;
     font-family: FontAwesome;
     color: black;
 }
-.pop{
-	display: inline-flex;
-	width: 800px;
-}
+
 .market{
-	display:grid;
-	margin-top:150px;
-	margin-left:50px;
-	height: 500;
+	margin-left: 120px;
+	height: 150px;
 	width: 150;
 }
-.filter{
+.ms{
 	display: flex;
-	width: 2100px;
-	height: 100px;
+}
+.filter{
+	margin-left: 130px;
+	display: flex;
+	width: 1610px;
+	height: 70px;
 	background: url("img/fill.png");
-	border-radius: 16px;
+	border-radius: 10px;
 }
 .filter button{
-	margin-top:15px;
+	margin-top:10px;
 	margin-left:10px;
 	border-radius: 10px;
 	font-size: 20px;
 	border: none;
 	color:white;
 	background: rgba(151,169,239,0.39);
-	height: 70px;
-	width: 200px;
+	height: 49px;
+	width: 160px;
 }
 .filter h1{
-	padding-top: 25px; 
+	padding-top: 10px; 
 	padding-left: 20px;
 	margin-right: 50px;
 	color:white;
 }
 .sell{
-	margin-top:-150px;
-	margin-left: 1800px;
-	position: absolute;
+	margin-left: 900px;
 	border-radius: 50px;
 	font-size: 30px;
 	border: none;
 	color: white;
 	background: rgba(138,103,224,0.48);
-	width: 300px;
-	height: 100px;
+	width: 210px;
+	height: 70px;
 }
 .id{
 	display: flex;
@@ -145,45 +147,45 @@ body{
 .item{
 	display: grid;
     border-radius: 15px;
-	margin-top: 10px;
+	margin-top: 25px;
 	margin-bottom: 50px;
-	margin-left: 20px;
+	margin-left: 50px;
 	background: url("img/item.png");
 	box-shadow: 0.1px 0.1px 3.5px;
-	height: 600px;
-	width: 400px;
+	height: 420px;
+	width: 280px;
 }
 .item a{
-	padding-left: 25px;
-	font-size: 25px;
+	margin-left: 25px;
+	font-size: 17px;
 	color: black;
 	border: none !important;
 	list-style: none;
 }
 .music{
-	height: 380px;
+	height: 266px;
 	border-radius: 15px;
-	margin-top: 9px;
-	margin-left: 10px;
+	margin-top: 7px;
+	margin-left: 7px;
 }
 .buy{
-	font-size: 25px;
-	margin-left: 250px;
-	margin-top: 20px;
+	font-size: 17px;
+	margin-left:90px ;
 	border-radius: 26px;
-	width: 122px;
-	height: 47px;
+	width: 85px;
+	height: 32px;
 	background: black;
 	color: #FFFFFF;
 }
+.bb{
+	display: flex;
+}
 .price{
-	margin-top:517px;
-	margin-left: 20px;
-	font-size: 25px;
-	position: absolute;
+	font-size: 17px;
 	border-radius: 26px;
-	width: 122px;
-	height: 47px;
+	width: 85px;
+	height: 32px;
+	margin-left: 10px;
 	color: black;
 	border: none;
 	background: #E1DFEE;
@@ -196,19 +198,13 @@ body{
 }
 .footer{
 	background: #E1DFEE;
-	height: 500px;
+	height: 350px;
 	margin: 0 auto;
-}
-.container{
-	
-
 }
 .container img{
 	margin-left: 450px;
 }
-.footer_container{
-	
-}
+
 .footer_container div{
 	margin-left: 440px;
 	
